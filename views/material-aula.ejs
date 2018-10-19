@@ -1,0 +1,21 @@
+<div class="row bloco-material-aula">
+        <div id="div-material-aula" class="col s12">
+          <div class="col s12 push right-align">
+            <span class="grey-text">MATERIAL AULA
+              <i id="i-material-aula" class="material-icons i-material-aula">keyboard_arrow_down</i>
+            </span>
+          </div>
+          <div id="div-arquivos" class="col s12 pull left-align" style="display:none;">
+            <p>Arquivos:</p>
+            <% if(arquivos && arquivos.length > 0){ %>
+            <ul>
+                <% arquivos.forEach(function(i){ %>
+                <li><a href="<%= i.link%>"> <%= i.nome%></a></li>
+                <%})%>                            
+            </ul>
+            <%}%>
+          </div>
+        </div>
+      </div>
+    </div>
+  

@@ -1,0 +1,20 @@
+<div id="bloco-aula" class="">
+    <div class="row">
+      <div id="div-dia-calendario" class="col s12 valign-wrapper center-align div-dia-calendario" class="grey">
+        <p class="teal-text text-lighten-2 col s12 dia-calendario"><%= aula.dia %></p>
+      </div>
+      <div id="div-professor-modulo" class="col s6 pull">
+        <p>
+          <span class="grey-text">Nome da aula</span> <br />
+          <%=aula.nome%>
+        </p>
+        <p>
+          <span class="grey-text">Nome do módulo</span> <br />
+          <%=aula.modulo%>
+        </p>
+      </div>
+      <div id="div-hora-data" class="col s6 push right-align">
+        <p> <%= aula.data%> <br /><%=aula.hora%></p>
+      </div>
+    </div>      
+</div>

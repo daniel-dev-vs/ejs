@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Febracorp</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="nav-extended teal lighten-2">
+    <div class="nav-wrapper">
+      <a href="#" class="text-titulo">MBA em experiência.. </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab" class="active"><a href="#tab-calendario">Calendário</a></li>
+        <li class="tab"><a href="#tab-eletivas">Eletivas</a></li>
+        <li class="tab"><a href="#tab-notas-faltas">Notas e Faltas</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Aula 1</a></li>
+    <li><a href="#">Aula 2</a></li>
+    <li><a href="#">Aula 3</a></li>
+  </ul>
+
+  <div id="tab-calendario" class="row tab-calendario sombra">
+    <!--bloco aula -->
+    <%- include('aula', {aula: aula} ); -%>
+    <hr>
+    <!--bloco material aula -->
+    <%- include('material-aula', {arquivos: arquivos})-%>
+
+  <div id="tab-eletivas" class="col s12" style="height:130px;">
+    <div id="div-dia-calendario" class="col s12 valign-wrapper center-align div-dia-calendario" class="grey">
+        <p class="teal-text text-lighten-2 col s12 ">ELETIVAS</p>
+      </div>
+  </div>
+  <div id="tab-notas-faltas" class="col s12" style="height:130px;">
+  <div id="div-dia-calendario" class="col s12 valign-wrapper center-align div-dia-calendario" class="grey">
+        <p class="teal-text text-lighten-2 col s12 "> NOTAS E FALTAS</p>
+      </div>
+ </div>
+
+    <!--bloco chat -->
+     <%- include('chat')-%>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="materialize.js"></script>
+  <script src="init.js"></script>
+
+</body>
+
+</html>

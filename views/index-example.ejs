@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="materialize.css" type="text/css"/>
+        <script src="materialize.js" type="text/js"></script>
+        
+
+    </head>
+    <body>
+    <h1>Qualquer coisa</h1>
+        <p> bem vindo ao express<p/>
+        <h1>Lista de nomes possíveis<h1>
+
+        <ul>
+            <% nomes.forEach(function(i){ %>
+                <li><%= i%></li>
+            <% }); %>
+        </ul>
+
+        <%- include('footer', {nfooter: htm }); -%>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+} 
+
+/* nav/ titulos - início */
+
+nav .texto-titulo {
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+
+@media only screen and (max-width: 992px) {
+  nav .texto-titulo {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  nav .texto-titulo.left, nav .texto-titulo.right {
+    padding: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  nav .texto-titulo.left {
+    left: 0.5rem;
+  }
+  nav .texto-titulo.right {
+    right: 0.5rem;
+    left: auto;
+  }
+}
+/* titulos - fim */
+
+/* tabs - início*/
+.tabs .indicator {
+  background-color: rgb(255, 166, 0) !important;
+}
+/* tabs - fim*/
+
+/* calendário - início */
+.dia-calendario {
+  font-size:6.2em;
+}
+.div-dia-calendario {   
+  height: 130px; 
+  background-color:#e0e0e0;
+}
+.sombra {
+  box-shadow:grey 0px 1px 1px 0px;
+}
+
+.tab-calendario{
+  margin: 5px;
+  margin-bottom:15px;
+}
+
+/*calendário - fim */
+
+/* mensagens - início*/
+.mensagem-aluno {
+  border-radius: 45px 45px 0px 45px;
+}
+.mensagem-assistente {
+  border-radius: 45px 45px 45px 0px;
+}
+/* mensagens - fim*/
+
+/*ícones - início*/
+.i-material-aula {
+  position:relative; top: 8px;
+}
+/*ícones - fim*/
+
+/* material-aula*/
+
+/* chat - inicio*/
+#bloco-chat{
+  margin: 5px;
+}
+/* chat - fim*/

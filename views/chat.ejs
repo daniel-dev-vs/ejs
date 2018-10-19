@@ -1,0 +1,18 @@
+<div id="bloco-chat" class="row">
+    <%let classesAluno = "right light-green mensagem-aluno" %>
+    <%let classesAssistente = "left teal lighten-2 mensagem-assistente" %>
+
+    <% if(chat && chat.length > 0){ %>
+        <% chat.forEach(function(i){ %>
+        <div class="row">
+            <div class=" center-align  col s7 <%= i.aluno == false ? classesAssistente : classesAluno %>">
+            <span class="white-text ">
+                <%= i.mensagem%>
+            </span>
+            </div>
+        </div>
+        <%})%>
+    <%}%>         
+            
+
+</div>
